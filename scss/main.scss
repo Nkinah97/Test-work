@@ -1,0 +1,24 @@
+
+html, body { 
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+ }
+
+.page-one {
+background-color: #23243C;
+color: #7B7AAE;
+}
+
+.main {
+    flex: 1;
+}
+
+.container {
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+@import '_site.scss';
+@import '_reset.scss';
+@import '_var.scss';

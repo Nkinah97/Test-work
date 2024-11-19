@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="page-one">
+
+    <main class="main">
+        <div class="container"> 
+            <section class="balance__transfer">
+                <div class="top__row">
+                    <img src="src/img/top/Vector.svg" alt="icon">
+                    <h4>Переказ балансу між користувачами</h4>
+                </div>
+
+                <div class="balance-transfer-content">
+
+                    <div class="user-balance">
+                        <p class="balance-title">Ваш баланс у системі</p>
+
+                        <div class="balance-wrap">
+                            <p class="balance-timestamp" id="balanceTimestamp">на зараз</p>
+
+                            <span class="balance-details">
+                                <img src="src/img/top/Иконка.svg" alt="balance-icon">
+                                <p class="balance-amount">363,00</p>
+                            </span>
+    
+                        </div>
+
+                    </div>
+
+                    <div class="user-transfer-wrap user-selection-wrap-top">
+
+                        <div class="user-selection-wrap">
+
+                            <div class="user-selection">
+                                <h1 class="user-selection-title">Виберіть користувача</h1>
+                                    <div class="selection-options">
+                                        <label>
+                                            <input type="radio" name="user" value="other" checked>
+                                            <span class="user-option">Інший</span>
+                                        </label>
+        
+                                        <label>
+                                            <input type="radio" name="user" value="other">
+                                            <span class="user-option">Експерт</span>
+                                        </label>
+        
+                                        <label>
+                                            <input type="radio" name="user" value="other">
+                                            <span class="user-option">Користувач</span>
+                                        </label>
+        
+                                    </div>
+                            </div>
+    
+    
+                            <div class="search-bar-wrap">
+    
+                                <div class="search-bar-container"> 
+                                <input type="text" class="search-bar" placeholder="Введіть ID або ім'я користувача"> 
+                                <button class="search-button"> 
+                                    <img src="src/img/top/лупа.svg" alt="Пошук"> 
+                                </button> 
+                                
+                                </div>
+    
+                                <div class="search-bar-user">
+                                    <img class="search-bar-user-img" src="src/img/top/usr.svg" alt="user">
+    
+                                    <div class="search-bar-user-wrap">
+    
+                                        <p class="search-bar-user-name">Віктор Новіков</p>
+                                        <p class="search-bar-user-city">м. Київ</p>
+    
+                                        <div class="search-bar-user-trophy">
+                                            <img src="src/img/top/trophy-2.svg" alt="troph">
+                                            <p class="search-bar-user-trophy-num">13 / 202</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+                            
+                        
+                        </div>
+    
+                        <div class="transfer-wrap">
+    
+                        <div class="transfer-info">
+                            <p class="transfer-info-title">Я хочу переказати</p>
+    
+
+                            <label class="transfer-info-amount-label"> 
+                                <input type="radio" name="amount" value="27.00" 
+                                class="transfer-info-amount"> 
+
+                                <span class="custom-radio">
+                                </span> 
+
+                                <input class="transfer-info-input" type="number" 
+                                id="amount-input"
+                                placeholder="27.00"> 
+                                <input class="transfer-info-btn" 
+                                type="button" id="submit-button"
+                                value="КОНВЕРТУВАТИ"> </label> 
+                                <p class="transfer-info-amount-text">макс</p>
+    
+                        </div>
+    
+
+                        <div class="amount-transferred"> 
+                            <p class="transfer-info-title amount-transferred-title">
+                                Сума до переказу:
+                            </p> 
+                            <label class="amount-transferred-label"> 
+                                <input class="amount-transferred-num" 
+                                type="number" id="amount-input2" 
+                                placeholder="26.73"> 
+                                <input class="amount-transferred-info" 
+                                type="button" id="submit-button2" 
+                                value="переказати"> 
+                            </label> 
+                        </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="user-transfer-wrap user-transfer-wrap-bottom">
+                        
+                        <div class="user-selection-wrap ">
+
+                            <div class="user-selection">
+                                <h1 class="user-selection-title">Виберіть користувача</h1>
+                                    <div class="selection-options">
+                                        <label>
+                                            <input type="radio" name="user2" checked>
+                                            <span class="user-option">Інший</span>
+                                        </label>
+        
+                                        <label>
+                                            <input type="radio" name="user2">
+                                            <span class="user-option">Експерт</span>
+                                        </label>
+        
+                                        <label>
+                                            <input type="radio" name="user2">
+                                            <span class="user-option">Користувач</span>
+                                        </label>
+        
+                                    </div>
+                            </div>
+    
+    
+                            <div class="search-bar-wrap">
+    
+                                <div class="search-bar-container"> 
+                                <input type="text" class="search-bar" placeholder="Введіть ID або ім'я користувача"> 
+                                <button class="search-button"> 
+                                    <img src="src/img/top/лупа.svg" alt="Пошук"> 
+                                </button> 
+                                
+                                </div>
+    
+ 
+     <div class="search-bar-user">
+        <div class="user-selection-checkbox">
+            <input type="checkbox" id="select-user" name="select-user" value="Марія Павлова">
+            <label for="select-user"></label>
+        </div>
+
+        <img class="search-bar-user-img" src="src/img/top/girl.svg" alt="user">
+    
+        <div class="search-bar-user-wrap">
+            <p class="search-bar-user-name">Марія Павлова</p>
+            <p class="search-bar-user-city">м. Київ</p>
+    
+            <div class="search-bar-user-trophy">
+                <img src="src/img/top/trophy-2.svg" alt="trophy">
+                <p class="search-bar-user-trophy-num">25 / 190</p>
+            </div>
+        </div>
+        
+       
+    </div>
+    
+
+                            </div>
+                            
+                        
+                        </div>
+    
+                        <div class="transfer-wrap">
+    
+                            <div class="transfer-info">
+                            <p class="transfer-info-title">Я хочу переказати</p>
+    
+
+
+                            <label class="transfer-info-amount-label"> 
+                                <input type="number" name="amount" value="27.00" 
+                                class="transfer-info-amount transfer-info-amount-bottom"> 
+                                <span class="custom-radio"></span> 
+                                <input class="transfer-info-input transfer-info-input-bottom" 
+                                type="number" id="amount-input-bottom" placeholder="Введіть суму"> 
+                                <input class="transfer-info-btn" type="button" 
+                                id="submit-button-bottom" value="КОНВЕРТУВАТИ"> 
+                            </label>
+                            <p class="transfer-info-amount-text">макс</p>
+                                             
+    
+                            </div>
+    
+                            <div class="amount-transferred">
+                            <p class="transfer-info-title amount-transferred-title">Сума до переказу:</p>
+    
+                            <label class="amount-transferred-label">
+                                <input class="amount-transferred-num" 
+                                type="number"
+                                id="amount-input3"
+                                placeholder="0,00">
+    
+                                <input class="amount-transferred-info" 
+                                type="button" 
+                                id="submit-button4"
+                                value="переказати" 
+                                >
+    
+                            </label>
+
+                            <div class="btns">
+                                <button class="form-btn form-btn-active" type="button" id="confirm-button">Підтвердити</button>
+                                <button class="form-btn" type="button" id="cancel-button">Скасувати</button>
+                            </div>
+                            
+
+                            </div>
+    
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="btn-footer">Створити ще переказ</button>
+
+                    <div class="transfer-notice">
+                        <p>При переведенні балансу системою стягується 1% до переказу.</p>
+                        <p class="transfer-warning">Переклад здійснюється лише всередині системи.</p>
+                    </div>
+                    
+                </div>
+
+
+                
+                
+                  
+
+                
+            </section>
+        </div>
+    
+
+
+
+
+        
+    </main>
+
+
+
+
+    <script src="main.js"></script>    
+</body>
+</html>
