@@ -28,6 +28,46 @@ balanceTimestamp.addEventListener('mouseout', function() {
     tooltip.textContent = '';
 });
 
+//top
+document.querySelector('.search-button').addEventListener('click', function() {
+    const searchValue = document.querySelector('.search-bar').value;
+    if (searchValue) {
+
+        alert('Пошук за значенням: ' + searchValue);
+
+    } else {
+        alert('Будь ласка, введіть ID або ім\'я користувача для пошуку.');
+    }
+});
+
+// Обробник для Enter
+document.querySelector('.search-bar').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        document.querySelector('.search-button').click();
+    }
+});
+
+//bottom
+
+document.querySelector('.search-bar-wrap-2 .search-button').addEventListener('click', function() {
+    const searchValue = document.querySelector('.search-bar-wrap-2 .search-bar').value;
+    if (searchValue) {
+        console.log('Пошук за значенням: ' + searchValue);
+    } else {
+        alert('Будь ласка, введіть ID або ім\'я користувача для пошуку.');
+    }
+});
+
+//enter
+document.querySelector('.search-bar-wrap-2 .search-bar').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        document.querySelector('.search-bar-wrap-2 .search-button').click();
+    }
+});
+
+
+
+
 
 document.getElementById('submit-button').addEventListener('click', function() {
     const inputAmount = document.getElementById('amount-input').value;
